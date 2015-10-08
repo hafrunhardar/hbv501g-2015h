@@ -11,7 +11,6 @@ import org.springframework.boot.context.web.SpringBootServletInitializer;
  */
 @SpringBootApplication
 public class Application extends SpringBootServletInitializer{
-
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder applicationBuilder){
         return applicationBuilder.sources(Application.class);
