@@ -3,16 +3,17 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <link href="<c:url value="/css/main.css" />" rel="stylesheet">
-<html lang="en">
+<html lang="is">
 
     <head>
         <title>Project Title</title>
     </head>
     <body>
-
-    <h1>HBV501G Project Spring Boot Skeleton</h1>
-    <p>This skeleton of a Spring Boot Web project was made to help groups get started on their projects without to much hassle.</p>
-
+		  <form action="home" method="get">
+			  Notendanafn: <input type="text"><br>
+			  Lykilorð: <input type="text"><br>
+			  <input type="submit" value="Submit">
+			</form>
     </body>
     <footer>Class HBV501G, University of Iceland, Fall 2015</footer>
 </html>

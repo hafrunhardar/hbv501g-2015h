@@ -24,7 +24,7 @@ public class HomeController {
     // is running and you enter "localhost:8080" into a browser, this
     // method is called
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String home(){
+    public String index(){
 
         // The string "Index" that is returned here is the name of the view
         // (the Index.jsp file) that is in the path /main/webapp/WEB-INF/jsp/
@@ -32,6 +32,13 @@ public class HomeController {
         // file that has the same name
         return "Index";
     }
+    
+    @RequestMapping(value = "/", method = RequestMethod.POST)
+    public String home(){
+
+        return "Home";
+    }
+    
 
     // To call this method, enter "localhost:8080/user" into a browser
     @RequestMapping(value = "/user", method = RequestMethod.GET)
@@ -70,5 +77,20 @@ public class HomeController {
         // to the view (the .jsp file).
         // Look at the User.jsp file in /main/webapp/WEB-INF/jsp/ to see how the data is accessed
         return "User";
+    }
+    
+    @RequestMapping(value = "home/vaktaskra", method = RequestMethod.GET)
+    public String vaktaskra(Model model){
+    	return "Vaktaskra";
+    }
+    
+    @RequestMapping(value = "/home", method = RequestMethod.GET)
+    public String home(Model model){
+    	return "Home";
+    }
+    
+    @RequestMapping(value = "/home/namskeid", method = RequestMethod.GET)
+    public String namskeid(Model model){
+    	return "Namskeid";
     }
 }
