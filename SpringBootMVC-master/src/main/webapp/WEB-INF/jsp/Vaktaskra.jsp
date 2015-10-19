@@ -11,7 +11,7 @@
     <body>
 
     <h1>Vaktaskrá</h1>
-    <p>Here could be some user information</p>
+    <p>Here could be some information about the mechanics work schedules.</p>
 
     <table border="1px gray">
         <thead>
@@ -32,5 +32,17 @@
         </tbody>
     </table>
 
+    <table border="1px gray">
+        <thead>
+            
+        </thead>
+        <tbody>
+            <tr>
+    			<form action="../home" method="get">
+    				<input type="submit" value="Til baka">
+				</form>
+            </tr>
+        </tbody>
+    </table>
 
     </body>
