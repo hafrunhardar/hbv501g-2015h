@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <link href="<c:url value="/css/main.css" />" rel="stylesheet">
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="UTF-8"%>
 <html lang="is">
-
     <head>
         <title>Project Title</title>
     </head>
