@@ -11,7 +11,7 @@
     <body>
 
     <h1>Home</h1>
-    <p>Here could be some user information</p>
+    <p>Here could be some options for the users to choose from.</p>
 
     <table border="1px gray">
         <thead>
