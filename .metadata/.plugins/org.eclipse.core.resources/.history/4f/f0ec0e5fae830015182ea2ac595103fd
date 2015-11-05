@@ -1,0 +1,106 @@
+package project.persistence.entities;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "Aircraft") // If you want to specify a table name, you can do so here
+public class Aircraft {
+
+    // Declare that this attribute is the id
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private int tailnum;
+    private int tsn;
+    private String status;
+    private String mailfunctions;
+    private String apu;
+    private String engine;
+    private String location;
+
+
+    public Aircraft(int tailnum, int tsn, String status, 
+    				String mailfunctions, String apu,
+    				String engine, String location) {
+        this.setTailnum(tailnum);
+        this.setTsn(tsn);
+        this.setStatus(status);
+        this.setMailfunctions(mailfunctions);
+        this.setApu(apu);
+        this.setEngine(engine);
+        this.setLocation(location);
+    }
+
+
+	public int getTailnum() {
+		return tailnum;
+	}
+
+
+	public void setTailnum(int tailnum) {
+		this.tailnum = tailnum;
+	}
+
+
+	public int getTsn() {
+		return tsn;
+	}
+
+
+	public void setTsn(int tsn) {
+		this.tsn = tsn;
+	}
+
+
+	public String getStatus() {
+		return status;
+	}
+
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+
+	public String getMailfunctions() {
+		return mailfunctions;
+	}
+
+
+	public void setMailfunctions(String mailfunctions) {
+		this.mailfunctions = mailfunctions;
+	}
+
+
+	public String getApu() {
+		return apu;
+	}
+
+
+	public void setApu(String apu) {
+		this.apu = apu;
+	}
+
+
+	public String getEngine() {
+		return engine;
+	}
+
+
+	public void setEngine(String engine) {
+		this.engine = engine;
+	}
+
+
+	public String getLocation() {
+		return location;
+	}
+
+
+	public void setLocation(String location) {
+		this.location = location;
+	}
+    
+    
+}
