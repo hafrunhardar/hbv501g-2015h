@@ -24,19 +24,19 @@ public class Aircraft {
     private int tailnum;
     private int tsn;
     private String status;
-    private String mailfunctions;
+    private String malfunctions;
     private String apu;
     private String engine;
     private String location;
 
 
     public Aircraft(int tailnum, int tsn, String status, 
-    				String mailfunctions, String apu,
+    				String malfunctions, String apu,
     				String engine, String location) {
         this.setTailnum(tailnum);
         this.setTsn(tsn);
         this.setStatus(status);
-        this.setMailfunctions(mailfunctions);
+        this.setMailfunctions(malfunctions);
         this.setApu(apu);
         this.setEngine(engine);
         this.setLocation(location);
@@ -74,12 +74,12 @@ public class Aircraft {
 
 
 	public String getMailfunctions() {
-		return mailfunctions;
+		return malfunctions;
 	}
 
 
-	public void setMailfunctions(String mailfunctions) {
-		this.mailfunctions = mailfunctions;
+	public void setMailfunctions(String malfunctions) {
+		this.malfunctions = malfunctions;
 	}
 
 
