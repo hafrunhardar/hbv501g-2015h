@@ -29,7 +29,7 @@ public class Aircraft {
     private String engine;
     private String location;
 
-
+    
     public Aircraft(int tailnum, int tsn, String status, 
     				String malfunctions, String apu,
     				String engine, String location) {
@@ -40,13 +40,13 @@ public class Aircraft {
         this.setApu(apu);
         this.setEngine(engine);
         this.setLocation(location);
+        
     }
 
 
 	public int getTailnum() {
 		return tailnum;
 	}
-
 
 	public void setTailnum(int tailnum) {
 		this.tailnum = tailnum;
@@ -57,7 +57,6 @@ public class Aircraft {
 		return tsn;
 	}
 
-
 	public void setTsn(int tsn) {
 		this.tsn = tsn;
 	}
@@ -66,7 +65,6 @@ public class Aircraft {
 	public String getStatus() {
 		return status;
 	}
-
 
 	public void setStatus(String status) {
 		this.status = status;
@@ -77,7 +75,6 @@ public class Aircraft {
 		return malfunctions;
 	}
 
-
 	public void setMailfunctions(String malfunctions) {
 		this.malfunctions = malfunctions;
 	}
@@ -86,7 +83,6 @@ public class Aircraft {
 	public String getApu() {
 		return apu;
 	}
-
 
 	public void setApu(String apu) {
 		this.apu = apu;
@@ -97,7 +93,6 @@ public class Aircraft {
 		return engine;
 	}
 
-
 	public void setEngine(String engine) {
 		this.engine = engine;
 	}
@@ -107,10 +102,8 @@ public class Aircraft {
 		return location;
 	}
 
-
 	public void setLocation(String location) {
 		this.location = location;
 	}
-    
     
 }
