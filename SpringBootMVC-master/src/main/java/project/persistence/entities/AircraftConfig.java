@@ -2,7 +2,7 @@ package project.persistence.entities;
 
 import javax.persistence.*;
 
-@Entity
+@Embeddable
 @Table(name = "AircraftConfig") // If you want to specify a table name, you can do so here
 public class AircraftConfig {
 
