@@ -27,15 +27,9 @@ public class AircraftServiceImplementation implements AircraftService {
     }
 
     @Override
-    public void delete(Aircraft aircraft) {
-        repository.delete(aircraft);
-    }
-
-    @Override
     public List<Aircraft> findAll() {
         return repository.findAll();
     }
-
 
     @Override
     public Aircraft findOne(Long id) {

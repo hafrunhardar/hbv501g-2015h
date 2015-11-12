@@ -16,19 +16,7 @@ public class AircraftConfig {
 	private boolean SoftwareType;
 	private boolean ACARS;
 	
-	public AircraftConfig( boolean DataLoader, boolean ETOPS,
-			boolean WiFi, boolean IFE, boolean LightningSystem,
-			boolean TypeOfCPE, boolean LCDMod, 
-			boolean SoftwareType, boolean ACARS ) {
-		this.isDataLoader();
-		this.isETOPS();
-		this.isWiFi();
-		this.isIFE();
-		this.isLightningSystem();
-		this.isTypeOfCPE();
-		this.isLCDMod();
-		this.isSoftwareType();
-		this.isACARS();
+	public AircraftConfig() {
 	}
 	
 	public boolean isDataLoader() {

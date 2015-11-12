@@ -6,7 +6,9 @@
 <html lang="is">
 
     <head>
+        <meta charset="utf-8">
         <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
     </head>
     <body>
 
@@ -29,5 +31,6 @@
         </tbody>
     </table>
 
-
     </body>
+    
+</html>

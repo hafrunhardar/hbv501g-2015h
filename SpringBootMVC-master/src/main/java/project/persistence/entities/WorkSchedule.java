@@ -22,14 +22,14 @@ public class WorkSchedule {
 	private int startDateStamp;
 	private int endDateStamp;
 	private int employeeCNT;
-	private String[] employee;
+	private Employee[] employees;
 	
 	public WorkSchedule( int startDateStamp,int EndDateStamp, 
-			int EmployeeCNT, String[] Employee ) {
+			int EmployeeCNT, Employee[] Employees ) {
 		this.setStartDateStamp(startDateStamp);
 		this.setEndDateStamp(endDateStamp);
 		this.setEmployeeCNT(employeeCNT);
-		this.setEmployee(employee); 
+		this.setEmployees(employees); 
 	}
 
 	public int getStartDateStamp() {
@@ -56,12 +56,12 @@ public class WorkSchedule {
 		this.employeeCNT = employeeCNT;
 	}
 
-	public String[] getEmployee() {
-		return employee;
+	public Employee[] getEmployees() {
+		return employees;
 	}
 
-	public void setEmployee(String[] employee) {
-		this.employee = employee;
+	public void setEmployees(Employee[] employees) {
+		this.employees = employees;
 	}
 	
 }

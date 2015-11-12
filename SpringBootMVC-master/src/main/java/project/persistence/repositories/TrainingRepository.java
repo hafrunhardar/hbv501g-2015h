@@ -4,7 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import project.persistence.entities.Aircraft;
+import project.persistence.entities.Training;
 
 import java.util.List;
 
@@ -16,26 +16,26 @@ import java.util.List;
  *
  */
 @Repository
-public interface AircraftRepository extends JpaRepository<Aircraft, Long> {
+public interface TrainingRepository extends JpaRepository<Training, Long> {
 
 	@SuppressWarnings("unchecked")
-	Aircraft save(Aircraft aircraft);
+	Training save(Training training);
 
-    List<Aircraft> findAll();
+    List<Training> findAll();
 
     // If we need a custom query that maybe doesn't fit the naming convention used by the JPA repository,
     // then we can write it quite easily with the @Query notation, like you see below.
     // This method returns all PostitNotes where the length of the name is equal or greater than 3 characters.
     //@Query(value = "SELECT p FROM PostitNote p where length(p.name) >= 3 ")
-    //List<Aircraft> findAllWithNameLongerThan3Chars();
+    //List<Training> findAllWithNameLongerThan3Chars();
 
     // Instead of the method findAllReverseOrder() in PostitNoteService.java,
     // We could have used this method by adding the words
     // ByOrderByIdDesc, which mean: Order By Id in a Descending order
     //
-    List<Aircraft> findAllByOrderByIdDesc();
+    List<Training> findAllByOrderByIdDesc();
 
-    Aircraft findOne(Long id);
+    Training findOne(Long id);
 
-    //List<Aircraft> findByName(String name);
+    //List<Training> findByName(String name);
 }

@@ -1,31 +1,31 @@
 package project.service;
 
-import project.persistence.entities.Aircraft;
+import project.persistence.entities.Employee;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-public interface AircraftService {
+public interface EmployeeService {
 
     /**
      * Save a {@link PostitNote}
      * @param postitNote {@link PostitNote} to be saved
      * @return {@link PostitNote} that was saved
      */
-    Aircraft save(Aircraft aircraft);
+	Employee save(Employee employee);
 
     /**
      * Get all {@link PostitNote}s
      * @return A list of {@link PostitNote}s
      */
-    List<Aircraft> findAll();
+    List<Employee> findAll();
 
     /**
      * Find a {@link PostitNote} based on {@link Long id}
      * @param id {@link Long}
      * @return A {@link PostitNote} with {@link Long id}
      */
-    Aircraft findOne(Long id);
-    
+    Employee findOne(Long id);
+   
 }

@@ -6,7 +6,9 @@
 <html lang="is">
 
     <head>
+        <meta charset="utf-8">
         <title>Námskeið</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
     </head>
     <body>
 

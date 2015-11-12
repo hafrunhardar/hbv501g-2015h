@@ -6,7 +6,9 @@
 <html lang="en">
 
     <head>
-        <title>User Page</title>
+		<meta charset="utf-8">
+    	<title>User Page</title>
+    	<link rel="stylesheet" type="text/css" href="main.css">
     </head>
     <body>
 

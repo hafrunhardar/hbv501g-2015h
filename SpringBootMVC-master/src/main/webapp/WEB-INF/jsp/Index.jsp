@@ -5,6 +5,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="UTF-8"%>
 <html lang="is">
     <head>
+        <meta charset="utf-8">
         <title>Project Title</title>
     </head>
     <body>

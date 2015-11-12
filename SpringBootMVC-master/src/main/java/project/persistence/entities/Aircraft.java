@@ -10,7 +10,6 @@ public class Aircraft {
 		return id;
 	}
 
-
 	public void setId(Long id) {
 		this.id = id;
 	}
@@ -28,8 +27,8 @@ public class Aircraft {
     private String apu;
     private String engine;
     private String location;
+    private AircraftConfig aircraftConfig;
 
-    
     public Aircraft(int tailnum, int tsn, String status, 
     				String malfunctions, String apu,
     				String engine, String location) {
@@ -40,9 +39,7 @@ public class Aircraft {
         this.setApu(apu);
         this.setEngine(engine);
         this.setLocation(location);
-        
-    }
-
+	}
 
 	public int getTailnum() {
 		return tailnum;
@@ -104,6 +101,15 @@ public class Aircraft {
 
 	public void setLocation(String location) {
 		this.location = location;
+	}
+
+	
+	public AircraftConfig getAircraftConfig() {
+		return aircraftConfig;
+	}
+
+	public void setAircraftConfig(AircraftConfig aircraftConfig) {
+		this.aircraftConfig = aircraftConfig;
 	}
     
 }
