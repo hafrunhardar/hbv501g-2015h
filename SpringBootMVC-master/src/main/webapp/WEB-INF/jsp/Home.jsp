@@ -3,34 +3,42 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
+<!DOCTYPE html>
+
 <html lang="is">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Home</title>
-        <link rel="stylesheet" type="text/css" href="main.css">
-    </head>
-    <body>
+	<head>
+		<title>Home</title>
+	</head>
+	<body>
 
-    <h1>Home</h1>
-    <p>Here could be some options for the users to choose from.</p>
+		<header>
+			<h1>Home</h1>
+		</header>
 
-    <table border="1px gray">
-        <thead>
-            
-        </thead>
-        <tbody>
-            <tr>
-    			<form action="home/vaktaskra">
-    				<input type="submit" value="Vaktaskrá">
-				</form>
-				<form action="home/namskeid">
-    				<input type="submit" value="Námskeið">
-				</form>
-            </tr>
-        </tbody>
-    </table>
+		<main>
+			<div class="description">
+				<p>Here could be some options for the users to choose from.</p>
+			</div>
+			<div class="table">
+				<table border="1px gray">
+					<thead>
+						
+					</thead>
+					<tbody>
+						<tr>
+							<form action="home/vaktaskra">
+								<input type="submit" value="Vaktaskrá">
+							</form>
+							<form action="home/namskeid">
+								<input type="submit" value="Námskeið">
+							</form>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</main>
 
-    </body>
-    
+	</body>
+
 </html>

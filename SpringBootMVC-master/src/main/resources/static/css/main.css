@@ -1,4 +1,92 @@
-body{
-	background-color: black;
-	color: white;
+
+* { margin: 0; padding: 0; 	float: center; }
+
+body { 
+	background: #f2f2f2; 
+	font: 16px/2em  roboto, times new roman, serif; 
+	color: #262525; 
+}
+
+h1 { 
+	font: 5em/1em 'Niconne', georgia, cursive; 
+	text-align: left; 
+	color: rgb(54, 52, 107);
+	width: 100%; 
+	max-width: 600px; 
+	margin: 0 auto; 
+	padding: 10px;
+	padding-left: 100px;
+}
+
+h2 { 
+	font: 2em/1em 'Niconne', georgia, cursive;
+}
+
+header {
+	height: 100px;
+	padding-top: 100px;
+	background-color: #4867D6;
+	background-size: cover;  /* sér um að teygja myndina yfir svæði */
+}
+
+main {
+	max-width: 1200px;
+	margin: 1em auto -120px;	/* sticky footer */
+	background: #f2f2f2;
+}
+
+input {
+	color: #071D70;
+	background-color: #7945D6;
+	font-size: 2em/1em;
+	font-style: bold;
+	text-align: justify;
+	font-family: "Times New Roman", "Arial", Sans-serif;
+	padding: 15px 15px 15px 15px;
+	border-width: 2px 2px 2px 2px;
+	border-color: black;
+	border-style: solid;
+	margin: 5px;
+}
+
+input :hover {
+	color: #7945D6; 
+	background-color: #071D70; 
+	transition: all 0.5s;
+}
+
+.table {
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+	padding-bottom: 1em;
+}
+
+.table :nth-child(2n) { padding-left: 1em; } /* ýtum boxum hægra megin frá */
+.table p { padding: 1em;  }
+
+p { 
+	width: 50%; 
+	float: center;
+	box-sizing: border-box; 
+	padding-left: 1em; 
+	font-size: 2em/1em;
+	font-style: bold;
+
+	color: #071D70;
+/*	text-align: justify;
+	font-size: 20px;
+	font-style: bold;
+	background-color: lightgrey;
+	width: 80%;
+	padding: 5px 5px 5px 5px;
+	border-width: 2px 2px 2px 2px;
+	border-style: solid;
+	display: block;
+*/}
+
+
+@media screen and (max-width: 800px) {
+	header {background-size: 100%; margin: 0 auto;}
+	h1 {font: 3em/1em 'Niconne', georgia, cursive; margin: 0 auto;}
 }
