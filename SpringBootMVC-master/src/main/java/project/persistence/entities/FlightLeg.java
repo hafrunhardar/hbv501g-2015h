@@ -14,8 +14,8 @@ public class FlightLeg {
 
     private String arrivalAirport;
     private String departureAirport;
-   // private int on;
-    private int off;
+    private int onGround;
+    private int offGround;
     private int x;
     private int y;
     private String flumber;
@@ -50,22 +50,6 @@ public class FlightLeg {
 		this.departureAirport = departureAirport;
 	}
 
-	/*public int getOn() {
-		return on;
-	}
-
-	public void setOn(int on) {
-		this.on = on;
-	}*/
-
-	public int getOff() {
-		return off;
-	}
-
-	public void setOff(int off) {
-		this.off = off;
-	}
-
 	public int getX() {
 		return x;
 	}
@@ -88,6 +72,22 @@ public class FlightLeg {
 
 	public void setFlumber(String flumber) {
 		this.flumber = flumber;
+	}
+
+	public int getOnGround() {
+		return onGround;
+	}
+
+	public void setOnGround(int onGround) {
+		this.onGround = onGround;
+	}
+
+	public int getOffGround() {
+		return offGround;
+	}
+
+	public void setOffGround(int offGround) {
+		this.offGround = offGround;
 	}
     
 }
