@@ -6,14 +6,6 @@ import javax.persistence.*;
 @Table(name = "Aircraft") // If you want to specify a table name, you can do so here
 public class Aircraft {
 
-    public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
 
 	// Declare that this attribute is the id
     @Id
@@ -28,17 +20,29 @@ public class Aircraft {
     private String engine;
     private String location;
     private AircraftConfig aircraftConfig;
+<<<<<<< HEAD
+=======
+    
+    @OneToOne
+    private FlightLeg flightLeg;
+>>>>>>> 45904e7020370010409939a347f650145ca1cd87
 
-    public Aircraft(int tailnum, int tsn, String status, 
-    				String malfunctions, String apu,
-    				String engine, String location) {
-        this.setTailnum(tailnum);
+    public Aircraft() {
+       /*this.setTailnum(tailnum);
         this.setTsn(tsn);
         this.setStatus(status);
         this.setMailfunctions(malfunctions);
         this.setApu(apu);
         this.setEngine(engine);
-        this.setLocation(location);
+        this.setLocation(location);*/
+	}
+    
+    public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public int getTailnum() {
