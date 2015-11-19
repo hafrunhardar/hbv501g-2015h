@@ -5,14 +5,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "FlightLeg") // If you want to specify a table name, you can do so here
 public class FlightLeg {
-	
-    public Long getId() {
-		return id;
-	}
 
-	public void setId(Long id) {
-		this.id = id;
-	}
 
 	// Declare that this attribute is the id
     @Id
@@ -21,22 +14,25 @@ public class FlightLeg {
 
     private String arrivalAirport;
     private String departureAirport;
-    private int on;
+   // private int on;
     private int off;
     private int x;
     private int y;
     private String flumber;
+    
+    @OneToOne
+    private Aircraft aircraft;
 
-    public FlightLeg( String arrivalAirport, String departureAirport, 
-    		int on, int off, int x, int y, String flumber ) {
-    	this.setArrivalAirport(arrivalAirport);
-    	this.setDepartureAirport(departureAirport);
-    	this.setOn(on);
-    	this.setOff(off);
-    	this.setX(x);
-    	this.setY(y);
-    	this.setFlumber(flumber);
+    public FlightLeg() {
     }
+    
+    public Long getId() {
+ 		return id;
+ 	}
+
+ 	public void setId(Long id) {
+ 		this.id = id;
+ 	}
 
 	public String getArrivalAirport() {
 		return arrivalAirport;
@@ -54,13 +50,13 @@ public class FlightLeg {
 		this.departureAirport = departureAirport;
 	}
 
-	public int getOn() {
+	/*public int getOn() {
 		return on;
 	}
 
 	public void setOn(int on) {
 		this.on = on;
-	}
+	}*/
 
 	public int getOff() {
 		return off;
