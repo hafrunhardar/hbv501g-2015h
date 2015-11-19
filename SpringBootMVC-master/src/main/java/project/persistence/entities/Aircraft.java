@@ -28,6 +28,7 @@ public class Aircraft {
     private String engine;
     private String location;
     private AircraftConfig aircraftConfig;
+    private FlightLeg flightLeg;
 
     public Aircraft(int tailnum, int tsn, String status, 
     				String malfunctions, String apu,
@@ -110,6 +111,14 @@ public class Aircraft {
 
 	public void setAircraftConfig(AircraftConfig aircraftConfig) {
 		this.aircraftConfig = aircraftConfig;
+	}
+
+	public FlightLeg getFlightLeg() {
+		return flightLeg;
+	}
+
+	public void setFlightLeg(FlightLeg flightLeg) {
+		this.flightLeg = flightLeg;
 	}
     
 }
