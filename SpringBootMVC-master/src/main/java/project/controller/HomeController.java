@@ -79,9 +79,9 @@ public class HomeController {
         return "User";
     }
     
-    @RequestMapping(value = "home/vaktaskra", method = RequestMethod.GET)
-    public String vaktaskra(Model model){
-    	return "Vaktaskra";
+    @RequestMapping(value = "home/employee", method = RequestMethod.GET)
+    public String employee(Model model){
+    	return "Employee";
     }
     
     @RequestMapping(value = "/home", method = RequestMethod.GET)
@@ -89,8 +89,8 @@ public class HomeController {
     	return "Home";
     }
     
-    @RequestMapping(value = "/home/namskeid", method = RequestMethod.GET)
+    @RequestMapping(value = "/home/training", method = RequestMethod.GET)
     public String namskeid(Model model){
-    	return "Namskeid";
+    	return "Training";
     }
 }

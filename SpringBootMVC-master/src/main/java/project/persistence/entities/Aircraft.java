@@ -20,12 +20,9 @@ public class Aircraft {
     private String engine;
     private String location;
     private AircraftConfig aircraftConfig;
-<<<<<<< HEAD
-=======
     
     @OneToOne
     private FlightLeg flightLeg;
->>>>>>> 45904e7020370010409939a347f650145ca1cd87
 
     public Aircraft() {
        /*this.setTailnum(tailnum);

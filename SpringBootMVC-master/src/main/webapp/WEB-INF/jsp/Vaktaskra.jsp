@@ -6,9 +6,7 @@
 <html lang="is">
 
     <head>
-		<meta charset="utf-8">
 		<title>Vaktaskrá</title>
-		<link rel="stylesheet" type="text/css" href="main.css">
     </head>
     <body>
 
