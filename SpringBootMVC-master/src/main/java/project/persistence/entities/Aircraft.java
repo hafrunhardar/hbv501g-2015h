@@ -11,7 +11,6 @@ public class Aircraft {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private int tailnum;
     private int tsn;
     private String status;
@@ -20,12 +19,10 @@ public class Aircraft {
     private String engine;
     private String location;
     private AircraftConfig aircraftConfig;
-<<<<<<< HEAD
-=======
+    
     
     @OneToOne
     private FlightLeg flightLeg;
->>>>>>> 45904e7020370010409939a347f650145ca1cd87
 
     public Aircraft() {
        /*this.setTailnum(tailnum);
@@ -115,5 +112,6 @@ public class Aircraft {
 	public void setAircraftConfig(AircraftConfig aircraftConfig) {
 		this.aircraftConfig = aircraftConfig;
 	}
+
     
 }

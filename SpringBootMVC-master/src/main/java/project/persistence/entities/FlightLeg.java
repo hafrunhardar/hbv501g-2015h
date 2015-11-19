@@ -20,8 +20,8 @@ public class FlightLeg {
     private int y;
     private String flumber;
     
-    @OneToOne
-    private Aircraft aircraft;
+    //@OneToOne
+    //private Aircraft aircraft;
 
     public FlightLeg() {
     }
