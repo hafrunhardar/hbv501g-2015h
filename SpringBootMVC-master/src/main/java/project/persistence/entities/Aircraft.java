@@ -11,7 +11,6 @@ public class Aircraft {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private int tailnum;
     private int tsn;
     private String status;

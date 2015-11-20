@@ -11,7 +11,7 @@
     <body>
 
     <h1>Training</h1>
-    <p>Here could be some information about the mechanics.</p>
+    <p>Here could be some information about the mechanics training.</p>
 
     <table border="1px gray">
         <thead>
