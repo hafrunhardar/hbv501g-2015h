@@ -16,12 +16,13 @@
     
     <p>Here could be some information about the mechanics.</p>
 
-  	<c:forEach var = "aircraft" items="${aircraft}">
-  		<tr>
-  			<td><a href ="/home/aircraftList/${aircraft.getId()}">${aircraft.getId()}</td>
-  			</br>
-  		</tr>
-  	</c:forEach>
+  	${aircraft.getId()}
+  	</br>
+  	
+  	<table>
+  		${aircraft.valueToString()}
+  	</table>
+  	</br>
   	
 
     <table border="1px gray">

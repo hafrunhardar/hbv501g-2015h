@@ -103,7 +103,6 @@ public class HomeController {
     @RequestMapping(value = "/home/aircraftList", method = RequestMethod.GET)
     public String Aircrafts(Model model){
     	List<Aircraft> aircraft = aircraftService.findAll();
-    	//System.out.println(aircraft.size());
     	model.addAttribute("aircraft", aircraft);
     	
     	return "AircraftList";
@@ -116,13 +115,4 @@ public class HomeController {
     	
     	return "Aircraft";
     }
-    /*@RequestMapping(value = "/survey/surveyedit/{surveyId}/{questionId}", method = RequestMethod.GET)
-    public String SurveyEditorViewQuestion(@PathVariable Long surveyId, @PathVariable Long questionId,
-                                           Model model) {
-        Question question = questionService.findOne(questionId);
-        model.addAttribute("question", question);
-        model.addAttribute("option", new Option());
-
-        return "surveys/QuestionEditor";
-    }*/
 }

@@ -36,6 +36,7 @@ public interface AircraftRepository extends JpaRepository<Aircraft, Long> {
     List<Aircraft> findAllByOrderByIdDesc();
 
     Aircraft findOne(Long id);
+    
 
     //List<Aircraft> findByName(String name);
 }
