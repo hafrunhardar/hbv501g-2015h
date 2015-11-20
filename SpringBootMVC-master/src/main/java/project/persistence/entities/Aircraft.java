@@ -20,7 +20,6 @@ public class Aircraft {
     private String location;
     private AircraftConfig aircraftConfig;
     
-    
     @OneToOne
     private FlightLeg flightLeg;
 
@@ -112,6 +111,5 @@ public class Aircraft {
 	public void setAircraftConfig(AircraftConfig aircraftConfig) {
 		this.aircraftConfig = aircraftConfig;
 	}
-
     
 }
