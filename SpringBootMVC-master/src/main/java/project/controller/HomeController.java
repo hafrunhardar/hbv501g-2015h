@@ -106,17 +106,17 @@ public class HomeController {
     	//System.out.println(aircraft.size());
     	model.addAttribute("aircraft", aircraft);
     	
-    	return "Aircraft";
+    	return "AircraftList";
     }
     
-   /* @RequestMapping(value = "/home/aircraft/{aircraftID}", method = RequestMethod.GET)
+    @RequestMapping(value = "/home/aircraftList/{aircraftID}", method = RequestMethod.GET)
     public String Aircraft(@PathVariable Long aircraftID, Model model){
     	Aircraft aircraft = aircraftService.findOne(aircraftID);
     	model.addAttribute("aircraft", aircraft);
     	
     	return "Aircraft";
     }
-    @RequestMapping(value = "/survey/surveyedit/{surveyId}/{questionId}", method = RequestMethod.GET)
+    /*@RequestMapping(value = "/survey/surveyedit/{surveyId}/{questionId}", method = RequestMethod.GET)
     public String SurveyEditorViewQuestion(@PathVariable Long surveyId, @PathVariable Long questionId,
                                            Model model) {
         Question question = questionService.findOne(questionId);

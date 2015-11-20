@@ -19,7 +19,7 @@
   			</br>
   		</tr>
   	</c:forEach>
-  	
+  		
 
     <table border="1px gray">
         <thead>
