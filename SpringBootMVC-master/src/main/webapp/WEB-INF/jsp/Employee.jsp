@@ -10,7 +10,10 @@
     </head>
     <body>
 
+	<header>
     <h1>Employee</h1>
+    </header>
+    
     <p>Here could be some information about the mechanics.</p>
 
     <table border="1px gray">
