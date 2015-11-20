@@ -26,10 +26,7 @@
 					<tbody>
 						<tr>
 							<form action="home/aircraftList">
-								<input type="submit" value="List of aircrafts">
-							</form>
-							<form action="home/aircraft">
-								<input type="submit" value="Aircraft">
+								<input type="submit" value="Aircraft List">
 							</form>
 							<form action="home/employee">
 								<input type="submit" value="Employee">
@@ -40,6 +37,9 @@
 							<form action="home/training">
 								<input type="submit" value="Training">
 							</form>
+							<form action="home/contact">
+								<input type="submit" value="Contact">
+							</form>						
 						</tr>
 					</tbody>
 				</table>
