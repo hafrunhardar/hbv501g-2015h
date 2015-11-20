@@ -90,7 +90,7 @@ public class HomeController {
     }
     
     @RequestMapping(value = "/home/training", method = RequestMethod.GET)
-    public String namskeid(Model model){
+    public String Training(Model model){
     	return "Training";
     }
 }
