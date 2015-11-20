@@ -3,20 +3,26 @@ package project.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import java.util.List;
 import project.service.StringManipulationService;
+import project.persistence.entities.Aircraft;
+import project.service.*;
 
 @Controller
 public class HomeController {
 
     // Instance Variables
     StringManipulationService stringService;
+    AircraftService aircraftService;
 
     // Dependency Injection
     @Autowired
-    public HomeController(StringManipulationService stringService) {
+    public HomeController(StringManipulationService stringService, AircraftService aircraftService) {
         this.stringService = stringService;
+        this.aircraftService = aircraftService;
     }
 
     // Request mapping is the path that you want to map this method to
@@ -93,4 +99,30 @@ public class HomeController {
     public String Training(Model model){
     	return "Training";
     }
+    
+    @RequestMapping(value = "/home/aircraftList", method = RequestMethod.GET)
+    public String Aircrafts(Model model){
+    	List<Aircraft> aircraft = aircraftService.findAll();
+    	//System.out.println(aircraft.size());
+    	model.addAttribute("aircraft", aircraft);
+    	
+    	return "Aircraft";
+    }
+    
+   /* @RequestMapping(value = "/home/aircraft/{aircraftID}", method = RequestMethod.GET)
+    public String Aircraft(@PathVariable Long aircraftID, Model model){
+    	Aircraft aircraft = aircraftService.findOne(aircraftID);
+    	model.addAttribute("aircraft", aircraft);
+    	
+    	return "Aircraft";
+    }
+    @RequestMapping(value = "/survey/surveyedit/{surveyId}/{questionId}", method = RequestMethod.GET)
+    public String SurveyEditorViewQuestion(@PathVariable Long surveyId, @PathVariable Long questionId,
+                                           Model model) {
+        Question question = questionService.findOne(questionId);
+        model.addAttribute("question", question);
+        model.addAttribute("option", new Option());
+
+        return "surveys/QuestionEditor";
+    }*/
 }
