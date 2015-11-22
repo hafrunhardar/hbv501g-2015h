@@ -115,4 +115,31 @@ public class HomeController {
     	
     	return "Aircraft";
     }
+    
+    @RequestMapping(value = "/home/contact", method = RequestMethod.GET)
+    public String Contact(Model model){
+    	return "Contact";
+    }
+    
+    @RequestMapping(value = "/home/workSchedule", method = RequestMethod.GET)
+    public String WorkSchedule(Model model){
+    	return "WorkSchedule";
+    }
+/*
+    @RequestMapping(value = "/home/workSchedule", method = RequestMethod.GET)
+    public String WorkSchedules(Model model){
+    	List<WorkSchedule> workSchedule = WorkScheduleService.findAll();
+    	model.addAttribute("workSchedule", workSchedule);
+    	
+    	return "workSchedule";
+    }
+    
+    @RequestMapping(value = "/home/workScheduleList/{workScheduleID}", method = RequestMethod.GET)
+    public String WorkSchedule(@PathVariable Long workScheduleID, Model model){
+    	WorkSchedule workSchedule = workScheduleService.findOne(workScheduleID);
+    	model.addAttribute("workSchedule", workSchedule);
+    	
+    	return "WorkSchedule";
+    }
+*/
 }

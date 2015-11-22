@@ -6,23 +6,24 @@
 <html lang="is">
 
     <head>
-		<title>Aircraft List</title>
+		<title>Contact</title>
     </head>
     <body>
 
 	<header>
-    	<h1>Aircraft List</h1>
-   	</header>
-   	
-    <p>Here could be a list of aircrafts.</p>
+    	<h1>Contact</h1>
+    </header>
+    
+    <p>Here could be a list of contacts.</p>
 
-  	<c:forEach var = "aircraft" items="${aircraft}">
-  		<tr>
-  			<td><a href ="/home/aircraftList/${aircraft.getId()}">${aircraft.getId()}</td>
-  			</br>
-  		</tr>
-  	</c:forEach>
-  		
+  	${contact.getId()}
+  	</br>
+  	
+  	<table>
+  		${contact.valueToString()}
+  	</table>
+  	</br>
+  	
 
     <table border="1px gray">
         <thead>

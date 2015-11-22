@@ -38,8 +38,8 @@ main {
 input {
 	color: #071D70;
 	background-color: #7945D6;
-	font-size: 2em/1em;
-	font-style: bold;
+	font-size: 16px;
+	font-weight: bold;
 	text-align: justify;
 	font-family: "Times New Roman", "Arial", Sans-serif;
 	padding: 15px 15px 15px 15px;
@@ -70,7 +70,7 @@ p {
 	float: center;
 	box-sizing: border-box; 
 	padding-left: 1em; 
-	font-size: 2em/1em;
+	font-size: 20px;
 	font-style: bold;
 
 	color: #071D70;

@@ -6,19 +6,19 @@
 <html lang="is">
 
     <head>
-		<title>Aircraft List</title>
+		<title>Work Schedule</title>
     </head>
     <body>
 
 	<header>
-    	<h1>Aircraft List</h1>
+    	<h1>Work Schedule</h1>
    	</header>
    	
-    <p>Here could be a list of aircrafts.</p>
+    <p>Here could be a list of work schedules.</p>
 
-  	<c:forEach var = "aircraft" items="${aircraft}">
+  	<c:forEach var = "workSchedule" items="${workSchedule}">
   		<tr>
-  			<td><a href ="/home/aircraftList/${aircraft.getId()}">${aircraft.getId()}</td>
+  			<td><a href ="/home/workSchedule/${workSchedule.getId()}">${workSchedule.getId()}</td>
   			</br>
   		</tr>
   	</c:forEach>

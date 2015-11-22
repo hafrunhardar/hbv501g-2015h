@@ -25,13 +25,13 @@ public class Contact {
     private int phone;
     private String email;
         
-    public Contact( String name, String location, int phone, 
-    		String address, String email ) {
-    	this.setName(name);
+    public Contact(/* String name, String location, int phone, 
+    		String address, String email*/ ) {
+/*    	this.setName(name);
     	this.setLocation(location);
     	this.setAddress(address);
     	this.setPhone(phone);
-    	this.setEmail(email);   	
+    	this.setEmail(email); */
     }
     
 	public String getName() {
@@ -73,6 +73,9 @@ public class Contact {
 	public void setEmail(String email) {
 		this.email = email;
 	}    
-
+        
+	public String valueToString() {
+		return String.format("<td>%d</td>", id, phone, "<td>%s</td>", name, location, address, email);
+	}
 }
 

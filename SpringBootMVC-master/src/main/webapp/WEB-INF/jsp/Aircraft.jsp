@@ -11,10 +11,10 @@
     <body>
 
 	<header>
-    <h1>Aircraft</h1>
+    	<h1>Aircraft</h1>
     </header>
     
-    <p>Here could be some information about the mechanics.</p>
+    <p>Here could be some information about an aircraft.</p>
 
   	${aircraft.getId()}
   	</br>
@@ -31,7 +31,7 @@
         </thead>
         <tbody>
             <tr>
-    			<form action="../home" method="get">
+    			<form action="../aircraftList" method="get">
     				<input type="submit" value="Til baka">
 				</form>
             </tr>

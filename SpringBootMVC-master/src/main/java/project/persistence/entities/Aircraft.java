@@ -112,8 +112,8 @@ public class Aircraft {
 		this.aircraftConfig = aircraftConfig;
 	}
 	
-	public String valueToString(){
-		return String.format("<td>%d</td>",id, tailnum, tsn, "<td>%d</td>",apu, engine, location, status, malfunctions);
+	public String valueToString() {
+		return String.format("<td>%d</td>",id, tailnum, tsn, "<td>%s</td>",apu, engine, location, status, malfunctions);
 	}
     
 }
