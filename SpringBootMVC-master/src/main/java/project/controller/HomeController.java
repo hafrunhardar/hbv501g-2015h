@@ -12,7 +12,8 @@ import project.persistence.entities.Aircraft;
 import project.persistence.entities.Employee;
 import project.persistence.entities.Contact;
 import project.persistence.entities.Training;
-// import project.persistence.entities.WorkSchedule;
+import project.persistence.entities.WorkSchedule;
+
 import project.service.*;
 
 @Controller
@@ -24,17 +25,17 @@ public class HomeController {
     EmployeeService employeeService;
     ContactService contactService;
     TrainingService trainingService;
-//    WorkScheduleService workScheduleService;
+    WorkScheduleService workScheduleService;
     
     // Dependency Injection
     @Autowired
-    public HomeController(StringManipulationService stringService, AircraftService aircraftService, EmployeeService employeeService, ContactService contactService, TrainingService trainingService /*, WorkSchedule workSchedule*/) {
+    public HomeController(StringManipulationService stringService, AircraftService aircraftService, EmployeeService employeeService, ContactService contactService, TrainingService trainingService, WorkScheduleService workScheduleService) {
         this.stringService = stringService;
         this.aircraftService = aircraftService;
-        this.employeeService = employeeService;
+        //this.employeeService = employeeService;
+        //this.trainingService = trainingService;
+        //this.workScheduleService = workScheduleService;
         this.contactService = contactService;
-        this.trainingService = trainingService;
-        /*this.workScheduleService = workScheduleService;*/
     }
 
     // Request mapping is the path that you want to map this method to
@@ -57,25 +58,10 @@ public class HomeController {
     }
 
     
-    @RequestMapping(value = "/home/employee", method = RequestMethod.GET)
-    public String Employees(Model model){
-    	List<Employee> employee = employeeService.findAll();
-    	model.addAttribute("employee", employee);
-    	
-    	return "Employee";
-    }
-    
     
     @RequestMapping(value = "/home", method = RequestMethod.GET)
     public String home(Model model){
     	return "Home";
-    }
-    
-    @RequestMapping(value = "/home/training", method = RequestMethod.GET)
-    public String Training(Model model){
-    	List<Training> training = trainingService.findAll();
-    	model.addAttribute("training", training);
-    	return "Training";
     }
     
     @RequestMapping(value = "/home/aircraftList", method = RequestMethod.GET)
@@ -101,26 +87,4 @@ public class HomeController {
     	return "Contact";
     }
     
-    @RequestMapping(value = "/home/workSchedule", method = RequestMethod.GET)
-    public String WorkSchedule(Model model){
-    	return "WorkSchedule";
-    }
-
-    /*
-    @RequestMapping(value = "/home/workSchedule", method = RequestMethod.GET)
-    public String WorkSchedules(Model model){
-    	List<WorkSchedule> workSchedule = workScheduleService.findAll();
-    	model.addAttribute("workSchedule", workSchedule);
-    	
-    	return "workSchedule";
-    }
-    
-    @RequestMapping(value = "/home/workScheduleList/{workScheduleID}", method = RequestMethod.GET)
-    public String WorkSchedule(@PathVariable Long workScheduleID, Model model){
-    	WorkSchedule workSchedule = workScheduleService.findOne(workScheduleID);
-    	model.addAttribute("workSchedule", workSchedule);
-    	
-    	return "WorkSchedule";
-    }
-*/
 }
