@@ -115,14 +115,14 @@ public class Aircraft {
 
 	public String valueToString(){
 		return String.format(
-				"<td>ID: %d</td>"
-				+ "<td> Tail number: %d</td>"
-				+ "<td> TSN: %d</td>"
-				+ "<td> APU: %s</td>"
-				+ "<td> Engine: %s</td>"
-				+ "<td> Location: %s</td>"
-				+ "<td> Status: %s</td>"
-				+ "<td> Malfunctions: %s</td>"
+				  "<td> ID: %d </td>"
+				+ "<td> Tail number: %d </td>"
+				+ "<td> TSN: %d </td>"
+				+ "<td> APU: %s </td>"
+				+ "<td> Engine: %s </td>"
+				+ "<td> Location: %s </td>"
+				+ "<td> Status: %s </td>"
+				+ "<td> Malfunctions: %s </td>"
 				,id, tailnum, tsn,apu, engine, location, status, malfunctions);
 		}
 }

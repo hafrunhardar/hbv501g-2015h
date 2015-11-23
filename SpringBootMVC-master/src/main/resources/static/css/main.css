@@ -54,6 +54,18 @@ input :hover {
 	transition: all 0.5s;
 }
 
+th, td {
+	color: #024C68;
+	background-color: #62B1D0;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: justify;
+	font-family: "Times New Roman", "Arial", Sans-serif;
+	padding: 3px;
+	border: 1px solid black;
+	margin: 2px;
+}
+
 .table {
 	width: 50%;
 	float: left;
