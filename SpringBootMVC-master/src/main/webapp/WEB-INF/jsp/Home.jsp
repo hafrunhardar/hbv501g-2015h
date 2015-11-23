@@ -22,12 +22,10 @@
 					</thead>
 					<tbody>
 						<tr>
-							<div class="homelist">
 							<div class="button">
 								<form action="home/aircraftList">
 									<input type="submit" value="Aircraft List">
 								</form>
-							</div>
 							</div>
 							<div class="button" id="mainlist">
 								<form action="home/employee">

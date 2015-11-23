@@ -25,11 +25,11 @@ public class Training {
 	private String location;
 	private String nextDue;
 	private String teacher;
-	private int kt;
+	private String kt;
 
 	public Training( ) { }
 
-
+	
 	public String getUsername() {
 		return username;
 	}
@@ -75,11 +75,11 @@ public class Training {
 	}
 
 
-	public int getKt() {
+	public String getKt() {
 		return kt;
 	}
 
-	public void setKt(int kt) {
+	public void setKt(String kt) {
 		this.kt = kt;
 	}
 		
@@ -91,7 +91,7 @@ public class Training {
 				+ "<td> %s </td>"
 				+ "<td> %s </td>"
 				+ "<td> %s </td>"
-				+ "<td> %d </td>"
+				+ "<td> %s </td>"
 				,id, username, dateStamp, location, nextDue, teacher, kt);
 	}
 
