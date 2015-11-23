@@ -6,12 +6,15 @@
 <html lang="is">
 
     <head>
-		<title>Aircraft</title>
+		<title>Aircraft List</title>
     </head>
     <body>
 
-    <h1>Aircraft</h1>
-    <p>Here could be some information about the mechanics.</p>
+	<header>
+    	<h1>Aircraft List</h1>
+   	</header>
+   	
+    <p>Here could be a list of aircrafts.</p>
 
   	<c:forEach var = "aircraft" items="${aircraft}">
   		<tr>

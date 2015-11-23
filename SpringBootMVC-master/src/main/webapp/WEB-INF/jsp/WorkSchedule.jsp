@@ -6,28 +6,23 @@
 <html lang="is">
 
     <head>
-		<title>Aircraft</title>
+		<title>Work Schedule</title>
     </head>
     <body>
 
 	<header>
-    	<h1>Aircraft</h1>
-    </header>
-<<<<<<< HEAD
- 
-=======
-    
-    <p>Here could be some information about an aircraft.</p>
+    	<h1>Work Schedule</h1>
+   	</header>
+   	
+    <p>Here could be a list of work schedules.</p>
 
-  	${aircraft.getId()}
-  	</br>
->>>>>>> 44df0d7fec428c24c2ee9c76a10d5227dfd0ddf2
-  	
-  	<table>
-  		${aircraft.valueToString()}
-  	</table>
-  	</br>
-  	
+  	<c:forEach var = "workSchedule" items="${workSchedule}">
+  		<tr>
+  			<td><a href ="/home/workSchedule/${workSchedule.getId()}">${workSchedule.getId()}</td>
+  			</br>
+  		</tr>
+  	</c:forEach>
+  		
 
     <table border="1px gray">
         <thead>
@@ -35,7 +30,7 @@
         </thead>
         <tbody>
             <tr>
-    			<form action="../aircraftList" method="get">
+    			<form action="../home" method="get">
     				<input type="submit" value="Til baka">
 				</form>
             </tr>

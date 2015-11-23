@@ -6,25 +6,21 @@
 <html lang="is">
 
     <head>
-		<title>Aircraft</title>
+		<title>Contact</title>
     </head>
     <body>
 
 	<header>
-    	<h1>Aircraft</h1>
+    	<h1>Contact</h1>
     </header>
-<<<<<<< HEAD
- 
-=======
     
-    <p>Here could be some information about an aircraft.</p>
+    <p>Here could be a list of contacts.</p>
 
-  	${aircraft.getId()}
+  	${contact.getId()}
   	</br>
->>>>>>> 44df0d7fec428c24c2ee9c76a10d5227dfd0ddf2
   	
   	<table>
-  		${aircraft.valueToString()}
+  		${contact.valueToString()}
   	</table>
   	</br>
   	
@@ -35,7 +31,7 @@
         </thead>
         <tbody>
             <tr>
-    			<form action="../aircraftList" method="get">
+    			<form action="../home" method="get">
     				<input type="submit" value="Til baka">
 				</form>
             </tr>
