@@ -64,9 +64,11 @@
     <table>
         <tbody>
             <tr>
-    			<form action="../aircraftList" method="get">
-    				<input type="submit" value="Til baka">
-				</form>
+				<div class="button">
+	    			<form action="../aircraftList" method="get">
+	    				<input type="submit" value="Til baka">
+					</form>
+				</div>
             </tr>
         </tbody>
     </table>

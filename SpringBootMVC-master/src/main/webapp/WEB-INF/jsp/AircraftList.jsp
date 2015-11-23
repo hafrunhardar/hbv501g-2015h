@@ -46,9 +46,11 @@
         </thead>
         <tbody>
             <tr>
-    			<form action="../home" method="get">
-    				<input type="submit" value="Til baka">
-				</form>
+				<div class="button">
+	    			<form action="../home" method="get">
+	    				<input type="submit" value="Til baka">
+					</form>
+				</div>
             </tr>
         </tbody>
     </table>
