@@ -14,6 +14,22 @@
     	<h1>Employee</h1>
     </header>
     
+<<<<<<< HEAD
+    <p>Here could be some information about the mechanics.</p>
+  	
+  	<table>
+  		<c:forEach var = "employee" items="${employee}">
+  			<tr>
+  				<td>${employee.valueToString()}</td>
+  			</tr>
+  			</br>
+  	</c:forEach>
+  	
+  	</table>
+  	</br>
+  	
+    <table border="1px gray">
+=======
 	<table>
 	    <thead>
             <tr style="font-weight: 600;">
@@ -38,6 +54,7 @@
 	</br>
     
     <table>
+>>>>>>> 7f031b6e6a226fd0cfd0499902e1aa337463ad09
         <thead>
             
         </thead>

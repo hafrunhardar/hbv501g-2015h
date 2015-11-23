@@ -34,6 +34,10 @@
         </tbody>
 	</table>
 	</br>
+<<<<<<< HEAD
+	</div>
+=======
+>>>>>>> 7f031b6e6a226fd0cfd0499902e1aa337463ad09
 
     <table>
         <thead>
