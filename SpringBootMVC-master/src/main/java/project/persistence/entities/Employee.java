@@ -20,7 +20,7 @@ public class Employee {
     private Long id;
 
     private String name;
-    private int kt;
+    private String kt;
     private String username;
     private int phone;
     private String email;
@@ -31,7 +31,7 @@ public class Employee {
     	//empty constructor
     }
 
-    public Employee(String name, int kt, String username, 
+    public Employee(String name, String kt, String username, 
     				int phone, String email, String capability) {
     	this.setName(name);
     	this.setKt(kt);
@@ -49,11 +49,11 @@ public class Employee {
 		this.name = name;
 	}
 
-	public int getKt() {
+	public String getKt() {
 		return kt;
 	}
 
-	public void setKt(int kt) {
+	public void setKt(String kt) {
 		this.kt = kt;
 	}
 
@@ -93,7 +93,7 @@ public class Employee {
 		return String.format(
 				  "<td> %d </td>"
 				+ "<td> %s </td>"
-				+ "<td> %d </td>"
+				+ "<td> %s </td>"
 				+ "<td> %s </td>"
 				+ "<td> %d </td>"
 				+ "<td> %s </td>"

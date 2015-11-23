@@ -19,26 +19,26 @@ public class WorkSchedule {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-	private int startDateStamp;
-	private int endDateStamp;
+	private String startDateStamp;
+	private String endDateStamp;
 	private int employeeCNT;
 	private Employee[] employees;
 	
 	public WorkSchedule( ) { }
 
-	public int getStartDateStamp() {
+	public String getStartDateStamp() {
 		return startDateStamp;
 	}
 
-	public void setStartDateStamp(int startDateStamp) {
+	public void setStartDateStamp(String startDateStamp) {
 		this.startDateStamp = startDateStamp;
 	}
 
-	public int getEndDateStamp() {
+	public String getEndDateStamp() {
 		return endDateStamp;
 	}
 
-	public void setEndDateStamp(int endDateStamp) {
+	public void setEndDateStamp(String endDateStamp) {
 		this.endDateStamp = endDateStamp;
 	}
 
@@ -61,8 +61,8 @@ public class WorkSchedule {
 	public String valueToString(){
 		return String.format(
 				  "<td> ID: %d </td>"
-				+ "<td> Start Date: %d </td>"
-				+ "<td> End Date: %d </td>"
+				+ "<td> Start Date: %s </td>"
+				+ "<td> End Date: %s </td>"
 				+ "<td> Number of employees: %d </td>"
 				+ "<td> Employees: %s </td>"
 				, id, startDateStamp, endDateStamp, employeeCNT, employees);
