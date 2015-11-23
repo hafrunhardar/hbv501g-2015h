@@ -15,9 +15,6 @@
 		</header>
 
 		<main>
-			<div class="description">
-				<p>Here could be some options for the users to choose from.</p>
-			</div>
 			<div class="table">
 				<table border="1px gray">
 					<thead>
@@ -25,27 +22,29 @@
 					</thead>
 					<tbody>
 						<tr>
+							<div class="homelist">
 							<div class="button">
 								<form action="home/aircraftList">
 									<input type="submit" value="Aircraft List">
 								</form>
 							</div>
-							<div class="button">
+							</div>
+							<div class="button" id="mainlist">
 								<form action="home/employee">
 									<input type="submit" value="Employee">
 								</form>
 							</div>
-							<div class="button"> 
+							<div class="button" id="mainlist"> 
 								<form action="home/workSchedule">
 									<input type="submit" value="Work Schedule">
 								</form>
 							</div>
-							<div class="button">
+							<div class="button" id="mainlist">
 								<form action="home/training">
 									<input type="submit" value="Training">
 								</form>
 							</div>
-							<div class="button">
+							<div class="button" id="mainlist">
 								<form action="home/contact">
 									<input type="submit" value="Contact">
 								</form>						

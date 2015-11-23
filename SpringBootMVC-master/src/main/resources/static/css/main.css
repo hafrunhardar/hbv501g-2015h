@@ -34,26 +34,6 @@ main {
 	background: #f2f2f2;
 }
 
-input {
-	color: #62B1D0;
-	background-color: #024C68;
-	font-size: 16px;
-	font-weight: bold;
-	text-align: justify;
-	font-family: "Times New Roman", "Arial", Sans-serif;
-	padding: 15px 15px 15px 15px;
-	border-width: 2px 2px 2px 2px;
-	border-color: black;
-	border-style: solid;
-	margin: 5px;
-}
-
-.button :hover {
-	color: #024C68; 
-	background-color: #62B1D0; 
-	transition: all 0.5s;
-}
-
 thead {
 	color: #62B1D0;
 	background-color: #024C68;
@@ -85,6 +65,27 @@ table {
 
 table :nth-child(2n) { padding-left: 1em; } /* ýtum boxum hægra megin frá */
 table p { padding: 1em;  }
+
+input {
+	color: #62B1D0;
+	background-color: #024C68;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	font-family: "Times New Roman", "Arial", Sans-serif;
+	padding: 15px 15px 15px 15px;
+	border-width: 2px 2px 2px 2px;
+	border-color: black;
+	border-style: solid;
+	margin: 5px;
+	width: 200px;
+}
+
+.button :hover {
+	color: #024C68; 
+	background-color: #62B1D0; 
+	transition: all 0.5s;
+}
 
 p { 
 	width: 50%; 
