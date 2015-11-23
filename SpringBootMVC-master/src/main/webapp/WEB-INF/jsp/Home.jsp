@@ -25,21 +25,31 @@
 					</thead>
 					<tbody>
 						<tr>
-							<form action="home/aircraftList">
-								<input type="submit" value="Aircraft List">
-							</form>
-							<form action="home/employee">
-								<input type="submit" value="Employee">
-							</form>
-							<form action="home/workSchedule">
-								<input type="submit" value="Work Schedule">
-							</form>
-							<form action="home/training">
-								<input type="submit" value="Training">
-							</form>
-							<form action="home/contact">
-								<input type="submit" value="Contact">
-							</form>						
+							<div class="button">
+								<form action="home/aircraftList">
+									<input type="submit" value="Aircraft List">
+								</form>
+							</div>
+							<div class="button">
+								<form action="home/employee">
+									<input type="submit" value="Employee">
+								</form>
+							</div>
+							<div class="button"> 
+								<form action="home/workSchedule">
+									<input type="submit" value="Work Schedule">
+								</form>
+							</div>
+							<div class="button">
+								<form action="home/training">
+									<input type="submit" value="Training">
+								</form>
+							</div>
+							<div class="button">
+								<form action="home/contact">
+									<input type="submit" value="Contact">
+								</form>						
+							</div>
 						</tr>
 					</tbody>
 				</table>

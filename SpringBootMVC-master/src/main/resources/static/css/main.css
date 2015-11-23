@@ -35,8 +35,8 @@ main {
 }
 
 input {
-	color: #071D70;
-	background-color: #7945D6;
+	color: #62B1D0;
+	background-color: #024C68;
 	font-size: 16px;
 	font-weight: bold;
 	text-align: justify;
@@ -48,9 +48,9 @@ input {
 	margin: 5px;
 }
 
-input :hover {
-	color: #7945D6; 
-	background-color: #071D70; 
+.button :hover {
+	color: #024C68; 
+	background-color: #62B1D0; 
 	transition: all 0.5s;
 }
 
@@ -93,18 +93,8 @@ p {
 	padding-left: 1em; 
 	font-size: 20px;
 	font-style: bold;
-
 	color: #071D70;
-/*	text-align: justify;
-	font-size: 20px;
-	font-style: bold;
-	background-color: lightgrey;
-	width: 80%;
-	padding: 5px 5px 5px 5px;
-	border-width: 2px 2px 2px 2px;
-	border-style: solid;
-	display: block;
-*/}
+}
 
 
 @media screen and (max-width: 800px) {
