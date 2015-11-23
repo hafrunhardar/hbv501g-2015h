@@ -75,7 +75,14 @@ public class Contact {
 	}    
         
 	public String valueToString() {
-		return String.format("<td>%d</td>", id, phone, "<td>%s</td>", name, location, address, email);
+		return String.format(
+				  "<td> ID: %d </td>"
+				+ "<td> Name: %s </td>"
+				+ "<td> Location: %s </td>"
+				+ "<td> Address: %s </td>"
+				+ "<td> Email: %d </td>"
+				+ "<td> Phone number: %d </td>"
+				,   id, name, location, address, email, phone);
 	}
 }
 

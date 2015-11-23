@@ -16,6 +16,7 @@
     
     <p>Here could be some information about the mechanics.</p>
   	
+<<<<<<< HEAD
   	<table>
   		<c:forEach var = "employee" items="${employee}">
   			<tr>
@@ -27,6 +28,12 @@
   		
   	</table>
   	</br>
+=======
+	  	<table>
+	  		${employee.valueToString()}
+	  	</table>
+	</br>
+>>>>>>> 7287e622b07bf7a425ca5292c5a858c0e5ba2db1
   	
     <table border="1px gray">
         <thead>

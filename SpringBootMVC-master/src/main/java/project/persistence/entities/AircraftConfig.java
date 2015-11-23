@@ -3,7 +3,7 @@ package project.persistence.entities;
 import javax.persistence.*;
 
 @Embeddable
-@Table(name = "AircraftConfig") // If you want to specify a table name, you can do so here
+@Table(name = "Aircraft") // If you want to specify a table name, you can do so here
 public class AircraftConfig {
 
 	private boolean DataLoader;
@@ -91,4 +91,18 @@ public class AircraftConfig {
 		ACARS = aCARS;
 	}
 	
+	public String valueToString(){
+		return String.format(
+				  "<td> Dataloader: %d </td>"
+				+ "<td> ETOPS: %d </td>"
+				+ "<td> WiFi: %d </td>"
+				+ "<td> IFE: %d </td>"
+				+ "<td> LightningSystem: %d </td>"
+				+ "<td> TypeOfCPU: %d </td>"
+				+ "<td> LCDMod: %d </td>"
+				+ "<td> SoftwareType: %d </td>"
+				+ "<td> ACARS: %d </td>"
+				,	DataLoader, ETOPS, WiFi, IFE, LightningSystem, TypeOfCPE, LCDMod, SoftwareType, ACARS);
+		}
+
 }

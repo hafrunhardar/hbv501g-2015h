@@ -13,6 +13,7 @@
 	<header>
     	<h1>Aircraft</h1>
     </header>
+<<<<<<< HEAD
 
     <p>Here could be some information about an aircraft.</p>
 
@@ -24,7 +25,23 @@
   	</table>
   	</br>
   	
+=======
+    
+    <div class="table">
+		<table>
+			${aircraft.valueToString()}
+		</table>
+	</br>
+	</div>
+>>>>>>> 7287e622b07bf7a425ca5292c5a858c0e5ba2db1
 
+    <div class="table">
+	    <table border="1px gray">
+			${aircraftConfig.valueToString()}
+		</table>
+	</br>
+	</div>
+	
     <table border="1px gray">
         <thead>
             
