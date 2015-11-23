@@ -55,10 +55,23 @@ th, td {
 	margin: 2px;
 }
 
+#mainlist.button {
+	margin: auto;
+	max-width: 200px;
+}
+
+#back.button {
+	margin: auto;
+	max-width: 200px;
+	float: right;
+	margin-right: 200px;
+}
+
 table {
 	width: 50%;
 	padding: 5px;
 	border: 1px;
+	margin: auto;
 	box-sizing: border-box;
 	position: relative;
 }
@@ -81,6 +94,10 @@ input {
 	margin-left: auto;
 	margin-right: auto;
 	width: 200px;
+}
+
+.button {
+	margin: auto;
 }
 
 .button :hover {
