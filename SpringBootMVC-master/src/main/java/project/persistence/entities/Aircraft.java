@@ -112,7 +112,6 @@ public class Aircraft {
 		this.aircraftConfig = aircraftConfig;
 	}
 	
-
 	public String valueToString(){
 		return String.format(
 				  "<td> ID: %d </td>"

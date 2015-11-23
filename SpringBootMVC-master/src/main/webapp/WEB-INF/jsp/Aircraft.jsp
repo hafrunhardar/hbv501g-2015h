@@ -14,15 +14,18 @@
     	<h1>Aircraft</h1>
     </header>
     
-    <p>Here could be some information about an aircraft.</p>
+    <div class="table">
+		<table>
+			${aircraft.valueToString()}
+		</table>
+	</br>
+	</div>
 
-  	${aircraft.getId()}
-  	<div class="table">
-	  	<br>
-		  	<table>
-		  		${aircraft.valueToString()}
-		  	</table>
-	  	</br>
+    <div class="table">
+	    <table border="1px gray">
+			${aircraftConfig.valueToString()}
+		</table>
+	</br>
 	</div>
 	
     <table border="1px gray">

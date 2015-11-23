@@ -66,6 +66,10 @@ th, td {
 	margin: 2px;
 }
 
+table {
+	margin: 20px;
+}
+
 .table {
 	width: 50%;
 	float: left;

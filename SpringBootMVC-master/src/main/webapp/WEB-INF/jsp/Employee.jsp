@@ -18,10 +18,10 @@
 
   	</br>
   	
-  	<table>
-  		${employee.valueToString()}
-  	</table>
-  	</br>
+	  	<table>
+	  		${employee.valueToString()}
+	  	</table>
+	</br>
   	
     <table border="1px gray">
         <thead>
