@@ -14,15 +14,24 @@
     	<h1>Work Schedule</h1>
    	</header>
    	
-    <p>Here could be a list of work schedules.</p>
-
-  	<c:forEach var = "workSchedule" items="${workSchedule}">
-  		<tr>
-  			<td><a href ="/home/workSchedule/${workSchedule.getId()}">${workSchedule.getId()}</td>
-  			</br>
-  		</tr>
-  	</c:forEach>
-  		
+    <table>
+        <thead>
+            <tr style="font-weight: 600;">
+                <td>ID</td> 
+                <td>Start date</td> 
+                <td>End date</td> 
+                <td>Number of employees</td> 
+                <td>Employees</td> 
+            </tr> 
+        </thead> 
+        <tbody> 
+	  		<c:forEach var = "workSchedule" items="${workSchedule}">
+	  			<tr>
+	  				${workSchedule.valueToString()}
+	  			</tr>
+		  	</c:forEach>
+        </tbody>
+    </table>
 
     <table border="1px gray">
         <thead>
@@ -40,5 +49,4 @@
     </table>
 
     </body>
-
 </html>

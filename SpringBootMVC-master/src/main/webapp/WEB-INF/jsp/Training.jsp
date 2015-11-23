@@ -29,7 +29,7 @@
         <tbody>
 	  		<c:forEach var = "training" items="${training}">
 	  			<tr>
-	  				<td>${training.valueToString()}</td>
+	  				${training.valueToString()}
 	  			</tr>
 		  	</c:forEach>
         </tbody>

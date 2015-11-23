@@ -51,7 +51,7 @@
         </thead>
         <tbody>
   			<tr>
-  				${aircraftConfig.valueToString()}
+  				${aircraft.valueToStringConfig()}
   			</tr>
         </tbody>
    	</table>

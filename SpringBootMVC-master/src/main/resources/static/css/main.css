@@ -4,7 +4,7 @@
 body { 
 	background: #f2f2f2; 
 	font: 16px/2em  roboto, times new roman, serif; 
-	color: #262525; 
+	color: #FFB573; 
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -12,7 +12,7 @@ body {
 h1 { 
 	font: 5em/1em 'Niconne', georgia, cursive; 
 	text-align: center; 
-	color: rgb(54, 52, 107);
+	color: #FFA340;
 	width: 100%; 
 	max-width: 600px; 
 	margin: 0 auto; 
@@ -25,7 +25,7 @@ h2 {
 header {
 	height: 100px;
 	padding-top: 100px;
-	background-color: #4867D6;
+	background-color: #3AA6D0;
 	background-size: cover;  /* sér um að teygja myndina yfir svæði */
 }
 

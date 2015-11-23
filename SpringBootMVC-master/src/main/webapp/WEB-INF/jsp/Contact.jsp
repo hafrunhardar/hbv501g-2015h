@@ -17,7 +17,6 @@
     <table>
         <thead>
             <tr style="font-weight: 600;">
-                <td></td>
                 <td>ID</td>
                 <td>Name</td>
                 <td>Location</td>
@@ -29,7 +28,7 @@
         <tbody>
 	  		<c:forEach var = "contact" items="${contact}">
 	  			<tr>
-	  				<td>${contact.valueToString()}</td>
+	  				${contact.valueToString()}
 	  			</tr>
 		  	</c:forEach>
         </tbody>

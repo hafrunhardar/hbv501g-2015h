@@ -91,18 +91,4 @@ public class AircraftConfig {
 		ACARS = aCARS;
 	}
 	
-	public String valueToString(){
-		return String.format(
-				  "<td> %d </td>"
-				+ "<td> %d </td>"
-				+ "<td> %d </td>"
-				+ "<td> %d </td>"
-				+ "<td> %d </td>"
-				+ "<td> %d </td>"
-				+ "<td> %d </td>"
-				+ "<td> %d </td>"
-				+ "<td> %d </td>"
-				,	DataLoader, ETOPS, WiFi, IFE, LightningSystem, TypeOfCPE, LCDMod, SoftwareType, ACARS);
-		}
-
 }

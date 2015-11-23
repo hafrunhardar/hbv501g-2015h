@@ -18,7 +18,6 @@
         <thead>
             <tr style="font-weight: 600;">
                 <td>Details</td>
-                <td></td>
                 <td>ID</td>
                 <td>Tail number</td>
                 <td>TSN</td>
@@ -33,7 +32,7 @@
 	  		<c:forEach var = "aircraft" items="${aircraft}">
 	  			<tr>
 	  				<td> <a href ="/home/aircraftList/${aircraft.getId()}">${"View aircraft"}</td>	
-	  				<td>${aircraft.valueToString()}</td>
+	  				${aircraft.valueToString()}
 	  			</tr>
 		  	</c:forEach>
         </tbody>

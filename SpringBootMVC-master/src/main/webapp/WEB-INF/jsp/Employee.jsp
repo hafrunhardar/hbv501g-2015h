@@ -17,7 +17,6 @@
 	<table>
 	    <thead>
             <tr style="font-weight: 600;">
-                <td></td>
                 <td>ID</td>
                 <td>Name</td>
                 <td>Kt</td>
@@ -30,7 +29,7 @@
         <tbody>
 	  		<c:forEach var = "employee" items="${employee}">
 	  			<tr>
-	  				<td>${employee.valueToString()}</td>
+	  				${employee.valueToString()}
 	  			</tr>
 		  	</c:forEach> 
         </tbody>

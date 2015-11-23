@@ -116,4 +116,19 @@ public class Aircraft {
 				+ "<td> %s </td>"
 				,id, tailnum, tsn,apu, engine, location, status, malfunctions);
 	}
+
+	public String valueToStringConfig(){
+		return String.format(
+				  "<td> %s </td>"
+				+ "<td> %s </td>"
+				+ "<td> %s </td>"
+				+ "<td> %s </td>"
+				+ "<td> %s </td>"
+				+ "<td> %s </td>"
+				+ "<td> %s </td>"
+				+ "<td> %s </td>"
+				+ "<td> %s </td>"
+				, aircraftConfig.isDataLoader()?"True":"False", aircraftConfig.isETOPS()?"True":"False", aircraftConfig.isWiFi()?"True":"False", aircraftConfig.isIFE()?"True":"False", aircraftConfig.isLightningSystem()?"True":"False", aircraftConfig.isTypeOfCPE()?"True":"False", aircraftConfig.isLCDMod()?"True":"False", aircraftConfig.isSoftwareType()?"True":"False", aircraftConfig.isACARS()?"True":"False");
+		}
+
 }

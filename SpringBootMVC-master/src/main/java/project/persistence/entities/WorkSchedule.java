@@ -60,12 +60,12 @@ public class WorkSchedule {
 
 	public String valueToString(){
 		return String.format(
-				  "<td> ID: %d </td>"
-				+ "<td> Start Date: %s </td>"
-				+ "<td> End Date: %s </td>"
-				+ "<td> Number of employees: %d </td>"
-				+ "<td> Employees: %s </td>"
+				  "<td> %d </td>"
+				+ "<td> %s </td>"
+				+ "<td> %s </td>"
+				+ "<td> %d </td>"
+				+ "<td> %s </td>"
 				, id, startDateStamp, endDateStamp, employeeCNT, employees);
-		}
+	}
 	
 }
