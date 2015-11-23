@@ -11,31 +11,33 @@
     <body>
 
 	<header>
-    <h1>Employee</h1>
+    	<h1>Employee</h1>
     </header>
     
-    <p>Here could be some information about the mechanics.</p>
-  	
-<<<<<<< HEAD
-  	<table>
-  		<c:forEach var = "employee" items="${employee}">
-  			<tr>
-  				<td>${employee.valueToString()}</td>
-  			</tr>
-  			</br>
-  	</c:forEach>
-  		
-  		
-  	</table>
-  	</br>
-=======
-	  	<table>
-	  		${employee.valueToString()}
-	  	</table>
+	<table>
+	    <thead>
+            <tr style="font-weight: 600;">
+                <td></td>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Kt</td>
+                <td>Username</td>
+                <td>Phone</td>
+                <td>Email</td>
+                <td>Capability</td>
+            </tr>
+        </thead>
+        <tbody>
+	  		<c:forEach var = "employee" items="${employee}">
+	  			<tr>
+	  				<td>${employee.valueToString()}</td>
+	  			</tr>
+		  	</c:forEach> 
+        </tbody>
+	</table>
 	</br>
->>>>>>> 7287e622b07bf7a425ca5292c5a858c0e5ba2db1
-  	
-    <table border="1px gray">
+    
+    <table>
         <thead>
             
         </thead>

@@ -14,14 +14,26 @@
     	<h1>Contact</h1>
     </header>
     
-    <p>Here could be a list of contacts.</p>
-
-  	${contact.getId()}
-  	</br>
-  	
-  	<table>
-  		${contact.valueToString()}
-  	</table>
+    <table>
+        <thead>
+            <tr style="font-weight: 600;">
+                <td></td>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Location</td>
+                <td>Address</td>
+                <td>Email</td>
+                <td>Phone number</td>
+            </tr>
+        </thead>
+        <tbody>
+	  		<c:forEach var = "contact" items="${contact}">
+	  			<tr>
+	  				<td>${contact.valueToString()}</td>
+	  			</tr>
+		  	</c:forEach>
+        </tbody>
+    </table>
   	</br>
   	
 

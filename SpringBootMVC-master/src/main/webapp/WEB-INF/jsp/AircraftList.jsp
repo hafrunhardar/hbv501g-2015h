@@ -13,18 +13,34 @@
 	<header>
     	<h1>Aircraft List</h1>
    	</header>
-   	
-    <p>Here could be a list of aircrafts.</p>
 
-  	<c:forEach var = "aircraft" items="${aircraft}">
-  		<tr>
-  			<td><a href ="/home/aircraftList/${aircraft.getId()}">${aircraft.getId()}</td>
-  			</br>
-  		</tr>
-  	</c:forEach>
-  		
+    <table>
+        <thead>
+            <tr style="font-weight: 600;">
+                <td>Details</td>
+                <td></td>
+                <td>ID</td>
+                <td>Tail number</td>
+                <td>TSN</td>
+                <td>APU</td>
+                <td>Engine</td>
+                <td>Location</td>
+                <td>Status</td>
+                <td>Malfunctions</td>
+            </tr>            
+        </thead>
+        <tbody>
+	  		<c:forEach var = "aircraft" items="${aircraft}">
+	  			<tr>
+	  				<td> <a href ="/home/aircraftList/${aircraft.getId()}">${"View aircraft"}</td>	
+	  				<td>${aircraft.valueToString()}</td>
+	  			</tr>
+		  	</c:forEach>
+        </tbody>
+    </table>
+  	</br>
 
-    <table border="1px gray">
+    <table>
         <thead>
             
         </thead>

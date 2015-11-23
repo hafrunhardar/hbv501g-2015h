@@ -11,31 +11,31 @@
     <body>
 
 	<header>
-    <h1>Training</h1>
+	    <h1>Training</h1>
     </header>
     
-    <p>Here could be some information about the mechanics training.</p>
-
-    <table border="1px gray">
+    <table>
         <thead>
             <tr style="font-weight: 600;">
-                <td>Name</td>
-                <td>Job</td>
-                <td>email</td>
-                <td>Description</td>
+                <td>ID</td>
+                <td>Username</td>
+                <td>Date Stamp</td>
+                <td>Location</td>
+                <td>Next Due</td>
+                <td>Teacher</td>
+                <td>Kt</td>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>${name}</td>
-                <td>${job}</td>
-                <td>${email}</td>
-                <td>${description}</td>
-            </tr>
+	  		<c:forEach var = "training" items="${training}">
+	  			<tr>
+	  				<td>${training.valueToString()}</td>
+	  			</tr>
+		  	</c:forEach>
         </tbody>
     </table>
 
-    <table border="1px gray">
+    <table>
         <thead>
             
         </thead>

@@ -13,39 +13,51 @@
 	<header>
     	<h1>Aircraft</h1>
     </header>
-<<<<<<< HEAD
-
-    <p>Here could be some information about an aircraft.</p>
-
-  	${aircraft.getId()}
-  	</br>
-  	
-  	<table>
-  		${aircraft.valueToString()}
-  	</table>
-  	</br>
-  	
-=======
     
-    <div class="table">
-		<table>
-			${aircraft.valueToString()}
-		</table>
-	</br>
-	</div>
->>>>>>> 7287e622b07bf7a425ca5292c5a858c0e5ba2db1
-
-    <div class="table">
-	    <table border="1px gray">
-			${aircraftConfig.valueToString()}
-		</table>
-	</br>
-	</div>
-	
-    <table border="1px gray">
-        <thead>
-            
+	<table>
+	    <thead>
+            <tr style="font-weight: 600;">
+                <td>ID</td>
+                <td>Tail number</td>
+                <td>TSN</td>
+                <td>APU</td>
+                <td>Engine</td>
+                <td>Location</td>
+                <td>Status</td>
+                <td>Malfunctions</td>
+            </tr>
         </thead>
+        <tbody>
+  			<tr>
+  				${aircraft.valueToString()}
+  			</tr>
+        </tbody>
+	</table>
+	</br>
+
+    <table>
+        <thead>
+            <tr style="font-weight: 600;">
+                <td>Dataloader</td>
+                <td>ETOPS</td>
+                <td>WiFi</td>
+                <td>IFE</td>
+                <td>Lightning system</td>
+                <td>Type of CPE</td>
+                <td>LCDMod</td>
+                <td>Software Type</td>
+                <td>ACARS</td>
+            </tr>
+        </thead>
+        <tbody>
+  			<tr>
+  				${aircraftConfig.valueToString()}
+  			</tr>
+        </tbody>
+   	</table>
+	</br>
+	
+    <table>
         <tbody>
             <tr>
     			<form action="../aircraftList" method="get">
@@ -54,7 +66,6 @@
             </tr>
         </tbody>
     </table>
-
+  	
     </body>
-
 </html>

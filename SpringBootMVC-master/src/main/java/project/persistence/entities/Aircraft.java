@@ -23,15 +23,7 @@ public class Aircraft {
     @OneToOne
     private FlightLeg flightLeg;
 
-    public Aircraft() {
-       /*this.setTailnum(tailnum);
-        this.setTsn(tsn);
-        this.setStatus(status);
-        this.setMailfunctions(malfunctions);
-        this.setApu(apu);
-        this.setEngine(engine);
-        this.setLocation(location);*/
-	}
+    public Aircraft() { }
     
     public Long getId() {
 		return id;
@@ -114,14 +106,14 @@ public class Aircraft {
 	
 	public String valueToString(){
 		return String.format(
-				  "<td> ID: %d </td>"
-				+ "<td> Tail number: %d </td>"
-				+ "<td> TSN: %d </td>"
-				+ "<td> APU: %s </td>"
-				+ "<td> Engine: %s </td>"
-				+ "<td> Location: %s </td>"
-				+ "<td> Status: %s </td>"
-				+ "<td> Malfunctions: %s </td>"
+				  "<td> %d </td>"
+				+ "<td> %d </td>"
+				+ "<td> %d </td>"
+				+ "<td> %s </td>"
+				+ "<td> %s </td>"
+				+ "<td> %s </td>"
+				+ "<td> %s </td>"
+				+ "<td> %s </td>"
 				,id, tailnum, tsn,apu, engine, location, status, malfunctions);
-		}
+	}
 }

@@ -24,12 +24,7 @@ public class WorkSchedule {
 	private int employeeCNT;
 	private Employee[] employees;
 	
-	public WorkSchedule( ) {
-/*		this.setStartDateStamp(startDateStamp);
-		this.setEndDateStamp(endDateStamp);
-		this.setEmployeeCNT(employeeCNT);
-		this.setEmployees(employees); */
-	}
+	public WorkSchedule( ) { }
 
 	public int getStartDateStamp() {
 		return startDateStamp;
@@ -62,5 +57,15 @@ public class WorkSchedule {
 	public void setEmployees(Employee[] employees) {
 		this.employees = employees;
 	}
+
+	public String valueToString(){
+		return String.format(
+				  "<td> ID: %d </td>"
+				+ "<td> Start Date: %d </td>"
+				+ "<td> End Date: %d </td>"
+				+ "<td> Number of employees: %d </td>"
+				+ "<td> Employees: %s </td>"
+				, id, startDateStamp, endDateStamp, employeeCNT, employees);
+		}
 	
 }
