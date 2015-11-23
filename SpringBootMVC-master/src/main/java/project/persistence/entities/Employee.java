@@ -26,6 +26,10 @@ public class Employee {
     private String email;
     private String capability;
  
+    
+    public Employee(){
+    	//empty constructor
+    }
 
     public Employee(String name, int kt, String username, 
     				int phone, String email, String capability) {

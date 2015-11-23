@@ -22,9 +22,10 @@ public class HomeController {
 
     // Dependency Injection
     @Autowired
-    public HomeController(StringManipulationService stringService, AircraftService aircraftService) {
+    public HomeController(StringManipulationService stringService, AircraftService aircraftService, EmployeeService employeeService) {
         this.stringService = stringService;
         this.aircraftService = aircraftService;
+        this.employeeService = employeeService;
     }
 
     // Request mapping is the path that you want to map this method to
@@ -86,13 +87,16 @@ public class HomeController {
         // Look at the User.jsp file in /main/webapp/WEB-INF/jsp/ to see how the data is accessed
         return "User";
     }
+   
     
     @RequestMapping(value = "/home/employee", method = RequestMethod.GET)
-    public String employee(@PathVariable Long employeeID, Model model){;
-		Employee employee = employeeService.findOne(employeeID);
+    public String Employees(Model model){
+    	List<Employee> employee = employeeService.findAll();
     	model.addAttribute("employee", employee);
+    	
     	return "Employee";
     }
+    
     
     @RequestMapping(value = "/home", method = RequestMethod.GET)
     public String home(Model model){

@@ -15,11 +15,16 @@
     </header>
     
     <p>Here could be some information about the mechanics.</p>
-
-  	</br>
   	
   	<table>
-  		${employee.valueToString()}
+  		<c:forEach var = "employee" items="${employee}">
+  			<tr>
+  				<td>${employee.valueToString()}</td>
+  			</tr>
+  			</br>
+  	</c:forEach>
+  		
+  		
   	</table>
   	</br>
   	

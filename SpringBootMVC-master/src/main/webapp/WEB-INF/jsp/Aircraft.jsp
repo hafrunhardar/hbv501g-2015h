@@ -13,15 +13,11 @@
 	<header>
     	<h1>Aircraft</h1>
     </header>
-<<<<<<< HEAD
- 
-=======
-    
+
     <p>Here could be some information about an aircraft.</p>
 
   	${aircraft.getId()}
   	</br>
->>>>>>> 44df0d7fec428c24c2ee9c76a10d5227dfd0ddf2
   	
   	<table>
   		${aircraft.valueToString()}
