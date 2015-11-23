@@ -16,10 +16,6 @@ import project.service.EmployeeService;
 import project.service.TrainingService;
 import project.service.WorkScheduleService;
 
-/**
- * Small controller just to show that you can have multiple controllers
- * in your project
- */
 @Controller
 public class EmployeeController {
 	EmployeeService employeeService; 
@@ -32,6 +28,25 @@ public class EmployeeController {
 	    this.trainingService = trainingService;
 	    this.workScheduleService = workScheduleService;
 	}
+	
+    @RequestMapping(value = "/home", method = RequestMethod.GET)
+    public String home(Model model){
+    	return "Home";
+    }
+    // Request mapping is the path that you want to map this method to
+    // In this case, the mapping is the root "/", so when the project
+    // is running and you enter "localhost:8080" into a browser, this
+    // method is called
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String index(){
+
+        // The string "Index" that is returned here is the name of the view
+        // (the Index.jsp file) that is in the path /main/webapp/WEB-INF/jsp/
+        // If you change "Index" to something else, be sure you have a .jsp
+        // file that has the same name
+        return "Index";
+    }
+    
     @RequestMapping(value = "/home/workSchedule", method = RequestMethod.GET)
     public String WorkSchedules(Model model){
     	List<WorkSchedule> workSchedule = workScheduleService.findAll();

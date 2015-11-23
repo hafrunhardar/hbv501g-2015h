@@ -13,22 +13,7 @@
 	<header>
     	<h1>Employee</h1>
     </header>
-<<<<<<< HEAD
-    
-=======
       	
-  	<table>
-  		<c:forEach var = "employee" items="${employee}">
-  			<tr>
-  				<td>${employee.valueToString()}</td>
-  			</tr>
-  			</br>
-  	</c:forEach>
-  	
-  	</table>
-  	</br>
-  	
->>>>>>> 70b7a0cb70b669e23263b3d83e2f589b0b8c28ad
 	<table>
 	    <thead>
             <tr style="font-weight: 600;">
