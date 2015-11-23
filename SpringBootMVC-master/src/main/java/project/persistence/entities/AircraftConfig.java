@@ -93,15 +93,15 @@ public class AircraftConfig {
 	
 	public String valueToString(){
 		return String.format(
-				  "<td> Dataloader: %d </td>"
-				+ "<td> ETOPS: %d </td>"
-				+ "<td> WiFi: %d </td>"
-				+ "<td> IFE: %d </td>"
-				+ "<td> LightningSystem: %d </td>"
-				+ "<td> TypeOfCPU: %d </td>"
-				+ "<td> LCDMod: %d </td>"
-				+ "<td> SoftwareType: %d </td>"
-				+ "<td> ACARS: %d </td>"
+				  "<td> %d </td>"
+				+ "<td> %d </td>"
+				+ "<td> %d </td>"
+				+ "<td> %d </td>"
+				+ "<td> %d </td>"
+				+ "<td> %d </td>"
+				+ "<td> %d </td>"
+				+ "<td> %d </td>"
+				+ "<td> %d </td>"
 				,	DataLoader, ETOPS, WiFi, IFE, LightningSystem, TypeOfCPE, LCDMod, SoftwareType, ACARS);
 		}
 

@@ -10,6 +10,9 @@ import java.util.List;
 
 import project.persistence.entities.Aircraft;
 import project.persistence.entities.Employee;
+import project.persistence.entities.Contact;
+import project.persistence.entities.Training;
+// import project.persistence.entities.WorkSchedule;
 import project.service.*;
 
 @Controller
@@ -19,13 +22,19 @@ public class HomeController {
     StringManipulationService stringService;
     AircraftService aircraftService;
     EmployeeService employeeService;
-
+    ContactService contactService;
+    TrainingService trainingService;
+//    WorkScheduleService workScheduleService;
+    
     // Dependency Injection
     @Autowired
-    public HomeController(StringManipulationService stringService, AircraftService aircraftService, EmployeeService employeeService) {
+    public HomeController(StringManipulationService stringService, AircraftService aircraftService, EmployeeService employeeService, ContactService contactService, TrainingService trainingService /*, WorkSchedule workSchedule*/) {
         this.stringService = stringService;
         this.aircraftService = aircraftService;
         this.employeeService = employeeService;
+        this.contactService = contactService;
+        this.trainingService = trainingService;
+        /*this.workScheduleService = workScheduleService;*/
     }
 
     // Request mapping is the path that you want to map this method to
@@ -44,50 +53,9 @@ public class HomeController {
     
     @RequestMapping(value = "/", method = RequestMethod.POST)
     public String home(){
-
         return "Home";
     }
-    
 
-    // To call this method, enter "localhost:8080/user" into a browser
-    @RequestMapping(value = "/user", method = RequestMethod.GET)
-    public String user(Model model){
-
-        // Here we will show how to add attributes to a model and send it to the view
-
-        // Since this small example is for a user, let's create some attributes
-        // that users might usually have in a system
-        String name = "Rincewind";
-        String job  = "Wizzard";
-        String email = "rincewizz@unseenuni.edu";
-        String description = "most likely to survive in a dungeon dimension.";
-
-
-        // Since we want our attributes regarding the user always in the same format,
-        // we are going to convert some strings using our StringManipulationService
-
-        // Let's assume that the name, job and description always have
-        // the first character in upper case
-        name = stringService.convertsFirstCharInStringToUpperCase(name);
-        job = stringService.convertsFirstCharInStringToUpperCase(job);
-        description = stringService.convertsFirstCharInStringToUpperCase(description);
-
-        // Let's assume that we always want e-mail in lower case
-        email = stringService.convertStringToLowerCase(email);
-
-
-        // Now let's add the attributes to the model
-        model.addAttribute("name",name);
-        model.addAttribute("job",job);
-        model.addAttribute("email",email);
-        model.addAttribute("description",description);
-
-        // By adding attributes to the model, we can pass information from the controller
-        // to the view (the .jsp file).
-        // Look at the User.jsp file in /main/webapp/WEB-INF/jsp/ to see how the data is accessed
-        return "User";
-    }
-   
     
     @RequestMapping(value = "/home/employee", method = RequestMethod.GET)
     public String Employees(Model model){
@@ -105,6 +73,8 @@ public class HomeController {
     
     @RequestMapping(value = "/home/training", method = RequestMethod.GET)
     public String Training(Model model){
+    	List<Training> training = trainingService.findAll();
+    	model.addAttribute("training", training);
     	return "Training";
     }
     
@@ -123,9 +93,11 @@ public class HomeController {
     	
     	return "Aircraft";
     }
-    
+
     @RequestMapping(value = "/home/contact", method = RequestMethod.GET)
     public String Contact(Model model){
+    	List<Contact> contact = contactService.findAll();
+    	model.addAttribute("contact", contact);
     	return "Contact";
     }
     
@@ -133,10 +105,11 @@ public class HomeController {
     public String WorkSchedule(Model model){
     	return "WorkSchedule";
     }
-/*
+
+    /*
     @RequestMapping(value = "/home/workSchedule", method = RequestMethod.GET)
     public String WorkSchedules(Model model){
-    	List<WorkSchedule> workSchedule = WorkScheduleService.findAll();
+    	List<WorkSchedule> workSchedule = workScheduleService.findAll();
     	model.addAttribute("workSchedule", workSchedule);
     	
     	return "workSchedule";

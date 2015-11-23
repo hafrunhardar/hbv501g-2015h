@@ -76,12 +76,12 @@ public class Contact {
         
 	public String valueToString() {
 		return String.format(
-				  "<td> ID: %d </td>"
-				+ "<td> Name: %s </td>"
-				+ "<td> Location: %s </td>"
-				+ "<td> Address: %s </td>"
-				+ "<td> Email: %d </td>"
-				+ "<td> Phone number: %d </td>"
+				  "<td> %d </td>"
+				+ "<td> %s </td>"
+				+ "<td> %s </td>"
+				+ "<td> %s </td>"
+				+ "<td> %s </td>"
+				+ "<td> %d </td>"
 				,   id, name, location, address, email, phone);
 	}
 }

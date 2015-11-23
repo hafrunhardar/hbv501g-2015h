@@ -89,5 +89,18 @@ public class FlightLeg {
 	public void setOffGround(int offGround) {
 		this.offGround = offGround;
 	}
-    
+
+	public String valueToString(){
+		return String.format(
+				  "<td> %d </td>"
+				+ "<td> %s </td>"
+				+ "<td> %s </td>"
+				+ "<td> %d </td>"
+				+ "<td> %d </td>"
+				+ "<td> %d </td>"
+				+ "<td> %d </td>"
+				+ "<td> %s </td>"
+				,id, arrivalAirport, departureAirport, onGround, offGround, x, y, flumber);
+	}
+
 }

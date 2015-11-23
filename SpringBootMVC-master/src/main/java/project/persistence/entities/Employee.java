@@ -27,7 +27,7 @@ public class Employee {
     private String capability;
  
     
-    public Employee(){
+    public Employee( ) { 
     	//empty constructor
     }
 
@@ -91,13 +91,13 @@ public class Employee {
 	
 	public String valueToString(){
 		return String.format(
-				"<td>ID: %d</td>"
-				+ "<td>Name: %s</td>"
-				+ "<td>Kt: %d</td>"
-				+ "<td>Username: %s</td>"
-				+ "<td>Phone: %d</td>"
-				+ "<td>Email: %s</td>"
-				+ "<td>Capability: %s</td>"
+				  "<td> %d </td>"
+				+ "<td> %s </td>"
+				+ "<td> %d </td>"
+				+ "<td> %s </td>"
+				+ "<td> %d </td>"
+				+ "<td> %s </td>"
+				+ "<td> %s </td>"
 				, id, name, kt, username, phone, email, capability);
 	}
     

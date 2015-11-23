@@ -27,16 +27,7 @@ public class Training {
 	private String teacher;
 	private int kt;
 
-	public Training( String username, String dateStamp, 
-			String location, String nextDue, 
-			String teacher, int kt ) {
-		this.setUsername(username);
-		this.setDateStamp(dateStamp);
-		this.setLocation(location);
-		this.setNextDue(nextDue);
-		this.setTeacher(teacher);
-		this.setKt(kt);		
-	}
+	public Training( ) { }
 
 
 	public String getUsername() {
@@ -92,4 +83,16 @@ public class Training {
 		this.kt = kt;
 	}
 		
+	public String valueToString(){
+		return String.format(
+				  "<td> %d </td>"
+				+ "<td> %s </td>"
+				+ "<td> %s </td>"
+				+ "<td> %s </td>"
+				+ "<td> %s </td>"
+				+ "<td> %s </td>"
+				+ "<td> %d </td>"
+				,id, username, dateStamp, location, nextDue, teacher, kt);
+	}
+
 }
