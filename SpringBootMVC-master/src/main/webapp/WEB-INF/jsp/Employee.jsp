@@ -16,25 +16,13 @@
     
     <p>Here could be some information about the mechanics.</p>
 
-    <table border="1px gray">
-        <thead>
-            <tr style="font-weight: 600;">
-                <td>Name</td>
-                <td>Job</td>
-                <td>email</td>
-                <td>Description</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>${name}</td>
-                <td>${job}</td>
-                <td>${email}</td>
-                <td>${description}</td>
-            </tr>
-        </tbody>
-    </table>
-
+  	</br>
+  	
+  	<table>
+  		${employee.valueToString()}
+  	</table>
+  	</br>
+  	
     <table border="1px gray">
         <thead>
             

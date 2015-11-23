@@ -7,8 +7,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import java.util.List;
-import project.service.StringManipulationService;
+
 import project.persistence.entities.Aircraft;
+import project.persistence.entities.Employee;
 import project.service.*;
 
 @Controller
@@ -17,6 +18,7 @@ public class HomeController {
     // Instance Variables
     StringManipulationService stringService;
     AircraftService aircraftService;
+    EmployeeService employeeService;
 
     // Dependency Injection
     @Autowired
@@ -85,8 +87,10 @@ public class HomeController {
         return "User";
     }
     
-    @RequestMapping(value = "home/employee", method = RequestMethod.GET)
-    public String employee(Model model){
+    @RequestMapping(value = "/home/employee", method = RequestMethod.GET)
+    public String employee(@PathVariable Long employeeID, Model model){;
+		Employee employee = employeeService.findOne(employeeID);
+    	model.addAttribute("employee", employee);
     	return "Employee";
     }
     

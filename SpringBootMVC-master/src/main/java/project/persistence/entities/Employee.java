@@ -84,5 +84,17 @@ public class Employee {
 	public void setCapability(String capability) {
 		this.capability = capability;
 	}
+	
+	public String valueToString(){
+		return String.format(
+				"<td>ID: %d</td>"
+				+ "<td>Name: %s</td>"
+				+ "<td>Kt: %d</td>"
+				+ "<td>Username: %s</td>"
+				+ "<td>Phone: %d</td>"
+				+ "<td>Email: %s</td>"
+				+ "<td>Capability: %s</td>"
+				, id, name, kt, username, phone, email, capability);
+	}
     
 }
