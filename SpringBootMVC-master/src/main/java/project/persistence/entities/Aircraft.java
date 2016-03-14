@@ -18,6 +18,8 @@ public class Aircraft {
     private String apu;
     private String engine;
     private String location;
+    
+    @Embedded
     private AircraftConfig aircraftConfig;
     
     @OneToOne

@@ -2,12 +2,16 @@ package project.controller;
 
 import java.util.List;
 
+import com.google.gson.Gson;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import project.persistence.entities.Employee;
 import project.persistence.entities.Training;
@@ -78,5 +82,17 @@ public class EmployeeController {
     	return "Employee";
     }
 
+    @RequestMapping(value = "/home/employees1", method = RequestMethod.GET, produces="application/json")
+    @ResponseBody
+    public ModelAndView employeelist() {
+        Gson gson = new Gson();
+        String json = gson.toJson(employeeService.findAll());
+
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.addObject(json);
+
+        return modelAndView;
+    }
+    
 }
 
